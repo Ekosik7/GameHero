@@ -1,7 +1,3 @@
 package domain.weapon;
-
-import domain.combat.DamageModel;
-
-public class Sword extends Weapon {
-    public Sword(DamageModel m) { super(m); }
-}
+import domain.combat.Damage;
+public class Sword extends Weapon { public Sword(Damage m){ super(m);} public String id(){ return "Sword"; } }

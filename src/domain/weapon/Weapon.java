@@ -1,9 +1,10 @@
 package domain.weapon;
 
-import domain.combat.DamageModel;
+import domain.combat.Damage;
 
 public abstract class Weapon {
-    protected final DamageModel model;
-    protected Weapon(DamageModel m) { this.model = m; }
-    public DamageModel damageModel() { return model; }
+    protected final Damage model;
+    protected Weapon(Damage m){ this.model=m; }
+    public Damage model(){ return model; }
+    public abstract String id();
 }
